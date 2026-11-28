@@ -45,3 +45,9 @@ philsopher alg2 end
 This is pretty proportionate as the philosophers are eating and sleeping for the same amount of times.
 - Run it longer by changing sleep(60): This keeps the philosopher count proportional. It does not starve any particular philosopher.
 - Make 1 philosophers time different than others/
+
+3. Created a new semaphore for the table to allow for N-1 to sit at once. This solves the deadlock that I created in algorithm 1.
+- The meals were roughly equal across all philosophers.
+- Since there are N-1 seated philosophers and N forks, there will always be 1 fork left free and therefore there will never be deadlock.
+- I removed sleep time for the philosophers and that made everyone hungry at the same time, which seems like it could be a setup for deadlock.
+- I changed the number of philosophers in the command line with 3, 4 and 5 and it seems like each time the number of meals per philosopher is either 3 or 4.
