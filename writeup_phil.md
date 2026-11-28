@@ -43,5 +43,5 @@ philosopher 4 ate 4 times
 
 philsopher alg2 end
 This is pretty proportionate as the philosophers are eating and sleeping for the same amount of times.
-- Run it longer by changing sleep(60)
+- Run it longer by changing sleep(60): This keeps the philosopher count proportional. It does not starve any particular philosopher.
 - Make 1 philosophers time different than others/
